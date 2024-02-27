@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Vallejo Public Library</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: olive; /* Updated color */
+            padding: 10px;
+            color: white;
+	    margin-bottom: 40px;
+
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        .library-info h1 {
+            margin-bottom: 5px;
+            text-align: center; /* Center library info text */
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px;
+            align-items: center; /* Align items in navigation */
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px; /* Add padding around the Home link */
+        }
+
+        .navigation input[type="search"] {
+            padding: 5px;
+            margin-left: 10px;
+            flex-grow: 0; /* Do not allow the search bar to grow */
+            width: 500px; 
+        }
+
+        .search-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #B2B266; 
+        }
+
+        .search-button {
+            padding: 10px;
+            background-color: olive;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .book-details {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to book details */
+        }
+
+        .book-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .action-button {
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .action-button.primary {
+            background-color: #6a0dad;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content, .search-section, .book-actions {
+                flex-direction: column;
+            }
+
+            .navigation input[type="search"] {
+                width: auto; /* Allow search bar to fill available space */
+                margin: 10px 0; /* Add margin for smaller screens */
+            }
+
+            .search-button, .action-button {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="library-logo.png" alt="Library Logo" class="logo">
+            <div class="library-info">
+                <h1>Vallejo Public Library</h1>
+                <p>505 Santa Clara Street Vallejo, CA 94590</p>
+            </div>
+            <!-- Removed calendar image placeholder -->
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <input type="search" placeholder="Catalog Search...">
+        </nav>
+    </header>
+    
+    <main>
+        <section class="search-section">
+            <button class="search-button">Advance Search</button>
+            <button class="search-button">Filters by Categories</button>
+        </section>
+        
+        <article class="book-details">
+            <h2>Details of Book...</h2>
+            <p>Total No. of Copies...</p>
+            <p>No of Books Available...</p>
+            <div class="book-actions">
+                <button class="action-button">Save for Later</button>
+                <button class="action-button primary">Reserve This Book</button>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Copyright © 2024 - All Rights Reserved - Vallejo Public Library</p>
+    </footer>
+</body>
+</html>
