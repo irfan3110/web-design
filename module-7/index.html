@@ -14,27 +14,31 @@
         </header>
         <main>
             <section aria-labelledby="glaucoma-overview">
-                <h2 id="glaucoma-overview">Exploring Glaucoma</h2>
+                <h2 id="glaucoma-overview">Exploring Glaucoma; What is Glaucoma?</h2>
                 <img src="glaucoma-overview.jpg" alt="Illustration of Glaucoma">
                 <ul>
+                    <li>Definition: Glaucoma is a group of eye conditions characterized by damage to the optic nerve, often associated with increased pressure inside the eye (intraocular pressure).</li>
                     <li>A condition characterized by increased pressure in the eye, leading to optic nerve damage.</li>
                     <li>Significant cause of blindness among adults over 60.</li>
                     <li>Vision loss from glaucoma is irreversible, making early detection and treatment crucial.</li>
+                    
                 </ul>
             </section>
             <section aria-labelledby="glaucoma-detection">
-                <h2 id="glaucoma-detection">Identifying Glaucoma</h2>
-                <img src="glaucoma-detection.jpg" alt="Signs of Glaucoma">
+                <h2 id="glaucoma-detection">Identifying Glaucoma; Symptoms of Glaucoma.</h2>
+                <img src="glaucoma-detection.png" alt="Signs of Glaucoma">
                 <ul>
+                    <li>Glaucoma often develops gradually and is asymptomatic in its early stages, making regular eye examinations crucial for early detection and treatment to prevent vision loss.</li>
                     <li>Initial loss of peripheral vision, often unnoticed until it significantly progresses.</li>
                     <li>Visual disturbances such as halos around lights.</li>
                     <li>Eye discomfort, redness, and blurred vision can signal acute cases.</li>
                 </ul>
             </section>
             <section aria-labelledby="glaucoma-management">
-                <h2 id="glaucoma-management">Managing Life with Glaucoma</h2>
+                <h2 id="glaucoma-management">Managing Life with Glaucoma; How to Control Glaucoma.</h2>
                 <img src="glaucoma-management.jpg" alt="Glaucoma Care">
                 <ul>
+                    <li>Regular use of prescribed eye drops and medications as directed by an ophthalmologist is essential for controlling intraocular pressure and preventing further damage to the optic nerve.</li>
                     <li>Consistent use of prescribed eye drops to manage eye pressure.</li>
                     <li>Engage in regular, comprehensive eye examinations for early intervention.</li>
                     <li>Lifestyle adjustments and protective measures can mitigate symptoms.</li>
@@ -44,6 +48,10 @@
             <footer>
                 <p>Visit the <a href="https://glaucoma.org" target="_blank" rel="noopener noreferrer">Glaucoma Research Foundation</a> for more information.</p>
             </footer>
-        <script src="script.js"></script>
+        <script>
+            document.getElementById('contrast-toggle').onclick = function() {
+            document.body.classList.toggle('high-contrast');
+            };
+        </script>
 </body>
 </html>
