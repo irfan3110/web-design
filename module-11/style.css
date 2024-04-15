@@ -1,0 +1,17 @@
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+header,
+footer {
+  margin-bottom: 20px;
+}
+
+#catImageContainer img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
